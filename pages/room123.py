@@ -103,7 +103,7 @@ st.markdown("""
             left: -500px; /* Move o botão 50px para a direita */
             top: -100px;
             }
-          
+            
 
         </style>    
     """, unsafe_allow_html=True)
@@ -148,7 +148,6 @@ if st.button("Perfil do aluno",key= 'perfil'):
 
 if st.button("Feedbacks",key= 'feedbacks'):
      st.switch_page("pages/feedback.py")
-
 
 col1, col2 = st.columns(2)
 
