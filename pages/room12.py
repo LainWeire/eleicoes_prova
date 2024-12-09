@@ -1,8 +1,8 @@
-
 import streamlit as st
 import time
 import pandas as pd 
 from PIL import Image
+from time import sleep
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
