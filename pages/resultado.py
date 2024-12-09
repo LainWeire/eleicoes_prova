@@ -66,9 +66,30 @@ def cadastro():
             background-size: cover;
             background-position: center; 
             background-attachment: fixed; 
+
+        .st-key-perfil button 
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -100px;
+            
+
+        .st-key-feedbacks button 
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -100px;
+         
         }}
+
+
     </style>
     """, unsafe_allow_html=True)
 
 # Chamada da função para carregar o fundo
 cadastro()
+
+
+if st.button("Perfil do aluno",key= 'perfil'):
+     st.switch_page("pages/perfil.py")
+
+if st.button("Feedbacks",key= 'feedbacks'):
+     st.switch_page("pages/feedback.py")
