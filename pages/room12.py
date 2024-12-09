@@ -148,16 +148,6 @@ if st.button("Perfil do aluno",key= 'perfil'):
 if st.button("Feedbacks",key= 'feedbacks'):
      st.switch_page("pages/feedback.py")
 
-
-col1, col2 = st.columns(2)
-
-with col1:
-    if st.button("Discurso do candidato 1", key='discurso1'):
-        webbrowser.open("https://drive.google.com/file/d/1d6C5kr-OL-gTC2oohPFOAQbGqg4Sj4ae/view")
-with col2:
-        if st.button("Discurso do candidato 2",key='discurso2'):
-            webbrowser.open("https://drive.google.com/file/d/1mfD7ccEBL8VG4tSTdW7GhGV4-K_To2x_/view")
-
 col1, col2 = st.columns(2)
 
 with col1:
