@@ -1,6 +1,4 @@
-import matplotlib.pyplot as plt
 import streamlit as st
-from datetime import datetime
 import time
 import pandas as pd 
 from PIL import Image
