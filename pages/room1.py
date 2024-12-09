@@ -156,12 +156,16 @@ if st.button("Feedbacks",key= 'feedbacks'):
 
 col1, col2 = st.columns(2)
 
+col1, col2 = st.columns(2)
+
 with col1:
-    if st.button("Discurso do candidato 1", key='discurso1'):
-        webbrowser.open("https://drive.google.com/file/d/11IVI3_s0NYogvjrYesEWxzz2KC7oO9Wv/view")
+    if st.button("Discurso do candidato 1"):
+        st.write("[Abrir Discurso do Candidato 1](https://drive.google.com/file/d/11IVI3_s0NYogvjrYesEWxzz2KC7oO9Wv/view)")
+
 with col2:
-        if st.button("Discurso do candidato 2",key='discurso2'):
-            webbrowser.open("https://drive.google.com/file/d/1AZausUdYaAfLX70AU1VNTdWBbg1MxvQd/view")
+    if st.button("Discurso do candidato 2"):
+        st.write("[Abrir Discurso do Candidato 2](https://drive.google.com/file/d/1AZausUdYaAfLX70AU1VNTdWBbg1MxvQd/view)")
+
 
 if st.session_state.ja_votou:
     st.warning("Você já votou! Obrigado por participar.")
