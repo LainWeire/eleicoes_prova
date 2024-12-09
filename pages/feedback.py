@@ -72,6 +72,19 @@ st.markdown("""
             color: #333;
             margin: 0;
         }
+            
+        .st-key-perfil button {
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -700px;
+            }
+
+        .st-key-login button {
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -700px;
+            }          
+            
     </style>
 """, unsafe_allow_html=True)
 
@@ -114,3 +127,11 @@ if st.session_state.feedback_list:
         """, unsafe_allow_html=True)
 else:
     st.info("Nenhum feedback recebido ainda.")
+
+
+
+if st.button("Perfil do aluno",key= 'perfil'):
+     st.switch_page("pages/perfil.py")
+
+if st.button("Refaça o login para navegar.",key= 'login'):
+     st.switch_page("login.py")
