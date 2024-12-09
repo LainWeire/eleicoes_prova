@@ -1,9 +1,8 @@
 import streamlit as st
 import time
-import pandas as pd 
-from time import sleep
 import webbrowser
-import matplotlib.pyplot as plt
+from time import sleep
+import pandas as pd
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
@@ -93,6 +92,18 @@ st.markdown("""
             background-color: #C9A68E;
             color: black;
             }
+
+        .st-key-perfil button {
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -100px;
+            }
+
+        .st-key-feedbacks button {
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -100px;
+            }
             
         </style>    
             
@@ -133,7 +144,15 @@ if "votos_candidato2" not in st.session_state:
 if "ja_votou" not in st.session_state:
     st.session_state.ja_votou = False
 
-# Verifica se o usuário já votou
+# mover entre as paginas
+
+if st.button("Perfil do aluno",key= 'perfil'):
+     st.switch_page("pages/perfil.py")
+
+if st.button("Feedbacks",key= 'feedbacks'):
+     st.switch_page("pages/feedback.py")
+
+
 
 col1, col2 = st.columns(2)
 
