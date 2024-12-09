@@ -1,6 +1,7 @@
+import matplotlib.pyplot as plt
 import streamlit as st
 import time
-import webbrowser
+import pandas as pd 
 from time import sleep
 
 st.set_page_config(initial_sidebar_state="collapsed")
