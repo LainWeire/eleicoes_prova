@@ -1,7 +1,5 @@
 import streamlit as st
-import streamlit_authenticator as stauth
 from time import sleep
-from PIL import Image
 import base64
 st.set_page_config(initial_sidebar_state="collapsed")
 
