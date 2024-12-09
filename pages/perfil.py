@@ -3,8 +3,11 @@ import streamlit_authenticator as stauth
 from time import sleep
 from PIL import Image
 import base64
-
 st.set_page_config(initial_sidebar_state="collapsed")
+
+st.title("Informações do aluno.")
+
+
 
 def get_base64_image(file_path):
     with open(file_path, "rb") as image_file:
@@ -45,7 +48,13 @@ st.markdown ("""
             background-position: center; 
             background-attachment: fixed; 
         }}
-                      
+
+        .st-key-feedbacks button {
+            position: relative;
+            left: -500px; /* Move o botão 50px para a direita */
+            top: -70px;
+            }
+         
     <style>
              """,
 unsafe_allow_html=True)
@@ -70,3 +79,11 @@ with col2:
         st.text("")
         st.text("")
         st.header(f"Reponsável: {st.session_state["responsavel1"]}")
+    else:
+        st.text("Faça login para ver suas informações.")
+        if st.button("login"):
+            st.switch_page("login.py")
+
+
+if st.button("Feedbacks",key= 'feedbacks'):
+     st.switch_page("pages/feedback.py")
