@@ -1,13 +1,7 @@
-import numpy as np
 import streamlit as st
-import random
-from io import BytesIO
 import time
 import webbrowser
 from time import sleep
-from PIL import Image
-import pandas as pd
-import os
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
