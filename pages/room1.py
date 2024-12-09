@@ -2,7 +2,7 @@ import streamlit as st
 import time
 import pandas as pd 
 from time import sleep
-
+import webbrowser
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
