@@ -3,7 +3,7 @@ import time
 import webbrowser
 from time import sleep
 import pandas as pd
-
+import base64
 
 st.set_page_config(initial_sidebar_state="collapsed")
 
